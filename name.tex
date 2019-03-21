@@ -1,0 +1,30 @@
+\documentclass[final, xcolor=dvipsnames, table]{beamer}
+
+\input{extrapackages}
+\input{settings}
+\input{newcommands}
+
+\usepackage[orientation=portrait,size=a0,scale=1.5,debug]{beamerposter}
+
+\title[shortitle]{Title}
+\author[shortauthor]{}
+\institute[ETH Z\"urich]{ETH Z\"urich}
+\date{\today}
+
+\setmainfont{Kinnari}
+\input{HeadLine}
+\input{FootLine}
+
+\begin{document}
+\begin{frame}
+\begin{columns}[t]
+	\begin{column}{.475\linewidth}
+		\input{Example}\vspace*{-.05\textheight}
+	\end{column}
+	\begin{column}{.475\linewidth}
+		\input{Example}\vspace*{-.05\textheight}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\end{document}

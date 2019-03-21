@@ -1,0 +1,33 @@
+\usetheme{Boadilla}
+\graphicspath{ {figures/} }
+\makeatletter
+\def\input@path{ {sections/} {settings/} }
+\makeatother
+\usecolortheme[named=darkgray]{structure}
+\useoutertheme{shadow}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\beamertemplatenavigationsymbolsempty
+\makeindex
+
+\sisetup{detect-weight=true, detect-family=true, range-units=single, range-phrase=$\ \sim\ $, separate-uncertainty=true, exponent-product=\ensuremath{\cdot}}
+
+\setbeamercolor{frametitle}{bg=darkgray!30!white, fg=darkgray}
+\setbeamercolor{date in head/foot}{bg=lightgray}
+\setbeamercolor{title in head/foot}{bg=darkgray, fg=lightgray}
+
+\def\d{.05\textwidth}
+\def\ds{.02\textwidth}
+
+\setbeamersize{text margin left=\d,text margin right=\d} 
+% 
+\addtobeamertemplate{block begin}{}{
+	\vspace{.0ex plus 0.0ex minus 0.0ex} % Pads top of block
+	% separates paragraphs in a block
+   \setlength{\parskip}{24pt plus 1pt minus 1pt}%
+   \begin{adjustwidth}{\ds}{\ds}
+}
+\addtobeamertemplate{block end}
+  {\end{adjustwidth}%
+   \vspace{1ex plus 0.0ex minus 0.0ex}}% Pads bottom of block
+  {\vspace{10ex plus 1ex minus 1ex}} % Seperates blocks from each other
